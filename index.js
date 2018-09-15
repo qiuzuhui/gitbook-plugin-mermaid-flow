@@ -11,7 +11,6 @@ if (isWin) {
     if (err || stderr) {
       console.error("err=");
       console.error(err || stderr);
-      reject(err || stderr);
     } else {
       binPath = stdout.split(/\r?\n/)[0];
     }
@@ -21,7 +20,6 @@ if (isWin) {
     if (err || stderr) {
       console.error("err=");
       console.error(err || stderr);
-      reject(err || stderr);
     } else {
       binPath = stdout.split(/\r?\n/)[0];
     }
